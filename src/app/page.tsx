@@ -7,6 +7,7 @@ import { DD214Help } from "./components/DD214Help";
 import { ConditionTracker } from "./components/ConditionTracker";
 import { ScamShield } from "./components/ScamShield";
 import { GetHelpNow } from "./components/GetHelpNow";
+import { RatingsBenefitsTracker } from "./components/RatingsBenefitsTracker";
 
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
 
@@ -64,11 +65,14 @@ export default function HomePage() {
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">Use the tools right here</h2>
             <p className="mt-4 text-navy-600">Free, private, and ready. Everything stays on your device.</p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <BenefitsScreener />
-            <DD214Help />
-            <ConditionTracker />
-            <ScamShield />
+          <div className="mt-12 space-y-6">
+            <RatingsBenefitsTracker />
+            <div className="grid gap-6 md:grid-cols-2">
+              <BenefitsScreener />
+              <DD214Help />
+              <ConditionTracker />
+              <ScamShield />
+            </div>
           </div>
           <div className="mt-8">
             <GetHelpNow />
