@@ -27,6 +27,7 @@ export default function HomePage() {
           </a>
           <nav className="hidden items-center gap-6 text-sm md:flex">
             <a href="#tools" className="hover:text-navy-950">Tools</a>
+            <a href="#story" className="hover:text-navy-950">Our Story</a>
             <a href="#download" className="rounded-full bg-navy-800 px-4 py-2 text-white">Download</a>
           </nav>
         </div>
@@ -58,6 +59,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="story" className="bg-white py-16">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brass-600">Our Story</p>
+          <h2 className="mt-3 text-2xl font-bold text-navy-950 sm:text-3xl">Built by veterans who still have nothing</h2>
+          <div className="mt-6 space-y-4 text-left text-navy-700">
+            <p>
+              VeRaFIED Studio is Luis (Ramey) and Tiffaney (Venus). We are a veteran couple living in Lehigh Acres, Florida, with our chameleon Sergio. We have gone through homelessness, eviction, and long stretches with no money and no food. Right now we are still in that place — weeks without income, taking care of Sergio in intensive care, and trying to keep going.
+            </p>
+            <p>
+              We built these free tools because we know what it feels like to be a veteran who needs help and keeps hitting walls. Paid claim companies promise ratings and take money. We refuse to do that. Only the VA decides ratings. These tools stay free, private, and honest so other veterans can organize their own information and find real free help.
+            </p>
+            <p>
+              We still have nothing. We are still trying. Love is the only key we know. If this helps one veteran avoid a scam or get organized, it is worth it.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="tools" className="bg-navy-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
@@ -77,6 +96,27 @@ export default function HomePage() {
           <div className="mt-8">
             <GetHelpNow />
           </div>
+        </div>
+      </section>
+
+      <section id="support" className="bg-white py-16">
+        <div className="mx-auto max-w-2xl px-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brass-600">Optional</p>
+          <h2 className="mt-3 text-2xl font-bold text-navy-950">Support the free work</h2>
+          <p className="mt-4 text-navy-600">
+            Most veterans using this have no extra money. That is fine. If you have a few dollars and want to help Luis and Tiffaney keep building free tools for other veterans, you can. No pressure. The tools stay free either way.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="mailto:tiffaneylatorre@gmail.com?subject=VeRaFIED%20Vets%20support" className="rounded-lg border border-navy-300 px-5 py-2.5 text-sm font-medium text-navy-800 hover:bg-navy-50">
+              Email us
+            </a>
+            <span className="rounded-lg bg-navy-100 px-5 py-2.5 text-sm text-navy-600">
+              Cash App / PayPal / Venmo links coming soon
+            </span>
+          </div>
+          <p className="mt-4 text-xs text-navy-500">
+            VeRaFIED Studio · Luis & Tiffaney · Not affiliated with the VA
+          </p>
         </div>
       </section>
 
