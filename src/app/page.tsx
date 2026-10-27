@@ -60,20 +60,15 @@ export default function HomePage() {
       </section>
 
       <section id="story" className="bg-white py-16">
-        <div className="mx-auto max-w-3xl px-6 text-center">
+        <div className="mx-auto max-w-2xl px-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-brass-600">Our Story</p>
-          <h2 className="mt-3 text-2xl font-bold text-navy-950 sm:text-3xl">Built by veterans who still have nothing</h2>
-          <div className="mt-6 space-y-4 text-left text-navy-700">
-            <p>
-              VeRaFIED Studio is Luis (Ramey) and Tiffaney (Venus). We are a veteran couple living in Lehigh Acres, Florida, with our chameleon Sergio. We have gone through homelessness, eviction, and long stretches with no money and no food. Right now we are still in that place — weeks without income, taking care of Sergio in intensive care, and trying to keep going.
-            </p>
-            <p>
-              We built these free tools because we know what it feels like to be a veteran who needs help and keeps hitting walls. Paid claim companies promise ratings and take money. We refuse to do that. Only the VA decides ratings. These tools stay free, private, and honest so other veterans can organize their own information and find real free help.
-            </p>
-            <p>
-              We still have nothing. We are still trying. Love is the only key we know. If this helps one veteran avoid a scam or get organized, it is worth it.
-            </p>
-          </div>
+          <h2 className="mt-3 text-2xl font-bold text-navy-950">Luis and Tiffaney · VeRaFIED Studio</h2>
+          <p className="mt-5 text-navy-700">
+            We are a veteran couple in Lehigh Acres, Florida. We have been homeless, evicted, and for the last three weeks we have had no money and no food. Sergio, our chameleon, is in intensive care. We still have nothing.
+          </p>
+          <p className="mt-4 text-navy-700">
+            We built these free tools anyway. Paid companies promise ratings and take money. We will not do that. Only the VA decides. The tools stay free and private. If they help one veteran, it is enough.
+          </p>
         </div>
       </section>
 
