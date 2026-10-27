@@ -121,16 +121,16 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-brass-600">Optional</p>
           <h2 className="mt-3 text-2xl font-bold text-navy-950">VeRaFIED Merch</h2>
           <p className="mt-4 text-navy-600">
-            Simple chameleon stickers and shirts. A few dollars if you want them. The free tools stay free either way.
+            Hats, hoodies, and new chameleon stickers from VeRaFIED Studio. A few dollars if you want them. The free tools stay free either way.
           </p>
           <div className="mt-6 space-y-3 text-left text-sm text-navy-700">
-            <p><strong>Chameleon Sticker Pack</strong> — Three designs: chameleon, “Love is the only key,” and “You earned it.”</p>
-            <p><strong>“You earned it” Tee</strong> — Chameleon + the line. Printed when you order.</p>
+            <p><strong>Studio Cap & Fire Chameleon Hoodie</strong> — Already on the Studio page.</p>
+            <p><strong>New Sticker Designs</strong> — Navy, Air Force, Marines, Coast Guard, and Space Force chameleons. Coming to the Studio merch soon.</p>
           </div>
           <div className="mt-6">
-            <span className="rounded-lg bg-navy-100 px-5 py-2.5 text-sm text-navy-600">
-              Links coming soon (Printful / Printify)
-            </span>
+            <a href="https://verafied-studios.vercel.app/#merch" target="_blank" rel="noopener noreferrer" className="inline-block rounded-lg bg-navy-800 px-5 py-2.5 text-sm font-medium text-white hover:bg-navy-700">
+              Shop VeRaFIED Studio Merch
+            </a>
           </div>
           <p className="mt-4 text-xs text-navy-500">
             VeRaFIED Studio · Luis & Tiffaney
