@@ -28,6 +28,7 @@ export default function HomePage() {
           <nav className="hidden items-center gap-6 text-sm md:flex">
             <a href="#tools" className="hover:text-navy-950">Tools</a>
             <a href="#story" className="hover:text-navy-950">Our Story</a>
+            <a href="#merch" className="hover:text-navy-950">Merch</a>
             <a href="#download" className="rounded-full bg-navy-800 px-4 py-2 text-white">Download</a>
           </nav>
         </div>
@@ -111,6 +112,28 @@ export default function HomePage() {
           </div>
           <p className="mt-4 text-xs text-navy-500">
             VeRaFIED Studio · Luis & Tiffaney · Not affiliated with the VA
+          </p>
+        </div>
+      </section>
+
+      <section id="merch" className="bg-navy-50 py-16">
+        <div className="mx-auto max-w-2xl px-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brass-600">Optional</p>
+          <h2 className="mt-3 text-2xl font-bold text-navy-950">VeRaFIED Merch</h2>
+          <p className="mt-4 text-navy-600">
+            Simple chameleon stickers and shirts. A few dollars if you want them. The free tools stay free either way.
+          </p>
+          <div className="mt-6 space-y-3 text-left text-sm text-navy-700">
+            <p><strong>Chameleon Sticker Pack</strong> — Three designs: chameleon, “Love is the only key,” and “You earned it.”</p>
+            <p><strong>“You earned it” Tee</strong> — Chameleon + the line. Printed when you order.</p>
+          </div>
+          <div className="mt-6">
+            <span className="rounded-lg bg-navy-100 px-5 py-2.5 text-sm text-navy-600">
+              Links coming soon (Printful / Printify)
+            </span>
+          </div>
+          <p className="mt-4 text-xs text-navy-500">
+            VeRaFIED Studio · Luis & Tiffaney
           </p>
         </div>
       </section>
