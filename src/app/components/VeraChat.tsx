@@ -8,26 +8,30 @@ type Msg = { from: "vera" | "user"; text: string };
 const canned: { q: string; a: string }[] = [
   {
     q: "How do I get a free copy of my DD214?",
-    a: "Your military records are free to request from the National Archives, online at archives.gov/veterans or by mail with Standard Form 180. An accredited VSO can also help you request them for free. Use the DD214 Help tool on this page.",
+    a: "Your DD214 is free from the National Archives (archives.gov/veterans) or by mail with Standard Form 180. An accredited VSO can also request it for free. I cannot get it for you, and I cannot get you a VA rating. Only the VA decides ratings.",
   },
   {
     q: "What benefits might I qualify for?",
-    a: "It depends on your service history, discharge status, and health. Use the Benefits Screener on this page — it asks five questions and gives you a plain-language list. The VA makes all final decisions.",
+    a: "I cannot tell you what you qualify for or get you a rating. Only the VA can decide that. The Benefits Screener on this page gives a plain-language list of things you may want to look into. An accredited VSO can help you prepare for free. The VA makes all final decisions.",
+  },
+  {
+    q: "Can you help me get a VA rating?",
+    a: "No. I cannot get you a VA rating, promise a percentage, or file a claim. Only the Department of Veterans Affairs decides ratings and benefits. I can point you to free tools and accredited VSOs who help for free. I am not a lawyer, doctor, or the VA.",
   },
   {
     q: "Am I being scammed?",
-    a: "Common red flags: anyone who charges you to file your first claim, anyone who promises you a specific rating or percentage, or anyone who asks you to exaggerate symptoms. Check the Scam Shield tool. Free, accredited help is available through VSOs.",
+    a: "Walk away from anyone who charges you to file your first claim, promises you a specific rating or percentage, or asks you to exaggerate. I cannot get you a rating. Check the Scam Shield tool. Free, accredited VSO help is available. The VA makes all decisions.",
   },
   {
     q: "Where can I get free human help?",
-    a: "Accredited Veterans Service Officers (VSOs) help veterans file claims for free. They are trained and recognized by the VA. Search for a local VSO or contact the VA for a referral.",
+    a: "Accredited Veterans Service Officers (VSOs) help veterans prepare and file for free. They are recognized by the VA. I cannot get you a rating or file anything for you. Search for a local VSO. Only the VA decides ratings and benefits.",
   },
 ];
 
 const intro: Msg[] = [
   {
     from: "vera",
-    text: "Ask me about VA benefits, DD214, claims, or scams. I give plain-language answers and point you to free help. I am not a lawyer, doctor, or the VA. The VA makes all final decisions.",
+    text: "I give plain-language answers about VA benefits and point you to free help. I cannot get you a VA rating, promise any percentage, or file a claim. Only the VA decides ratings. I am not a lawyer, doctor, or the VA.",
   },
 ];
 
@@ -49,11 +53,9 @@ export function VeraChat() {
     setMessages((m) => [...m, { from: "user", text: trimmed }]);
     setInput("");
 
+    const lower = trimmed.toLowerCase();
     const match = canned.find((c) =>
-      trimmed
-        .toLowerCase()
-        .split(/\s+/)
-        .some((w) => w.length > 3 && c.q.toLowerCase().includes(w)),
+      lower.split(/\s+/).some((w) => w.length > 3 && c.q.toLowerCase().includes(w))
     );
 
     setTimeout(
@@ -64,7 +66,7 @@ export function VeraChat() {
             from: "vera",
             text:
               match?.a ??
-              "I can help with common questions about benefits, DD214, and scams. For anything specific to your situation, talk to an accredited VSO. The VA makes all final decisions.",
+              "I cannot get you a VA rating or promise any percentage. Only the VA decides ratings and benefits. I can point you to the free tools on this page or to an accredited VSO who helps for free. I am not a lawyer, doctor, or the VA.",
           },
         ]);
       },
@@ -97,7 +99,7 @@ export function VeraChat() {
             </span>
             <div>
               <p className="text-sm font-semibold">Ask Vera</p>
-              <p className="text-xs text-navy-200">Free · Not the VA · Not a lawyer</p>
+              <p className="text-xs text-navy-200">Cannot get a rating · Free · Not the VA</p>
             </div>
           </header>
 
